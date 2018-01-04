@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nanchen.pinviewdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="输入密码"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="数字密码"/>
+
+        <com.nanchen.pinview.PinView
+            android:id="@+id/pinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:cursorVisible="false"
+            app:forceKeyboard="false"
+            app:hint=""
+            app:inputType="number"
+            app:password="true"
+            app:pinBackground="@drawable/example_drawable_with_grey_disabled"
+            app:pinHeight="30dp"
+            app:pinLength="4"
+            app:pinWidth="30dp"
+            app:splitWidth="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
