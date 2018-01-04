@@ -23,7 +23,16 @@ public class MainActivity extends AppCompatActivity implements PinViewEventListe
         mTvTime = findViewById(R.id.tv_time_cut);
         mPinView = findViewById(R.id.pinView);
 
-        mPinView.setPinViewEventListener(this);
+//        mPinView.setCanInput(true);// 设置是否可输入 默认true
+//        mPinView.setHint("");      // 设置EditText的Hint
+//        mPinView.setInputType(PinView.InputType.NUMBER); // 设置输入的格式
+//        mPinView.setPassword(true); // 设置是否以明文显示
+//        mPinView.setPinHeight(60);  // 设置每一个EditText的高度
+//        mPinView.setPinWidth(60);   // 设置每一个EditText的宽度
+//        mPinView.setPinLength(4);   // 设置可输入的 PIN 码长度，默认4
+//        mPinView.clearValue();      // 清除输入的数据
+//        mPinView.setValue("1234");  // 设置输入值
+        mPinView.setPinViewEventListener(this); // 设置输入完毕的监听事件
     }
 
     int count = 0;
