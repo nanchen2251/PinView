@@ -1,6 +1,8 @@
 # PinView
 PIN 码专用输入控件，支持任意长度和输入任意数据
 
+#### 号外：听说「nanchen」搞了一个 Android 开发者的免费福利，不行你看：[给 Android 开发者的一点福利：免费模拟面试](http://mp.weixin.qq.com/s/WRdSmGxwDp-CpQcSlmJYlg)
+
 - 该项目主要参考了 [https://github.com/GoodieBag/Pinview](https://github.com/GoodieBag/Pinview) 的部分代码。
 
 
